@@ -27,6 +27,7 @@ get '/:id' => "url_shortner/shortened_urls#show"
 in order to generate a shortened url:
 
 UrlShortner::ShortenedUrl.create(url: 'http://www.example.com')
+it will return an object with attribute short_url to be used
 
 ## Contributing
 Contribution directions go here.
