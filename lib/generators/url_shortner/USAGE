@@ -1,0 +1,8 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate url_shortner Thing
+
+    This will create:
+        what/will/it/create
