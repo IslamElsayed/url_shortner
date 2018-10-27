@@ -1,5 +1,5 @@
 # UrlShortner
-Short description and motivation.
+Simple url shortner gem
 
 ## Usage
 How to use my plugin.
@@ -8,7 +8,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'url_shortner'
+gem 'url_shortner', github: 'IslamElsayed/url_shortner'
 ```
 
 And then execute:
@@ -16,10 +16,13 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
-```bash
-$ gem install url_shortner
-```
+After you install Shortener run the generator:
+
+$ rails generate url_shortner url_shortner
+
+Then add to your routes:
+
+get '/:id' => "url_shortner/shortened_urls#show"
 
 ## Contributing
 Contribution directions go here.
