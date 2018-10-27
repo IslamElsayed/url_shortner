@@ -24,6 +24,10 @@ Then add to your routes:
 
 get '/:id' => "url_shortner/shortened_urls#show"
 
+in order to generate a shortened url:
+
+UrlShortner::ShortenedUrl.create(url: 'http://www.example.com')
+
 ## Contributing
 Contribution directions go here.
 
