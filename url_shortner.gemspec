@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = UrlShortner::VERSION
   s.authors     = ["Islam Elsayed"]
   s.email       = ["islam.elsayed.mohammed@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of UrlShortner."
-  s.description = "TODO: Description of UrlShortner."
+  s.summary     = "Url shortening implementation."
+  s.description = "Url shortening implementation."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
