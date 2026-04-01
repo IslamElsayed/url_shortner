@@ -18,11 +18,11 @@ $ bundle
 
 After you install Shortener run the generator:
 
-$ rails generate url_shortner url_shortner
+$ rails generate url_shortner
 
-Then add to your routes:
+Then mount the engine in your routes:
 
-get '/:id' => "url_shortner/shortened_urls#show"
+mount UrlShortner::Engine => "/"
 
 in order to generate a shortened url:
 

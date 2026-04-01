@@ -1,7 +1,7 @@
 module UrlShortner
   class ShortenedUrl < ApplicationRecord
     # validations
-    validates :url, uniqueness: true, presence: true
+    validates :url, uniqueness: true, presence: true, format: { with: /\Ahttps?:\/\/.+/i, message: "must be a valid HTTP or HTTPS URL" }
     validates :short_url, uniqueness: true
 
     # callbacks

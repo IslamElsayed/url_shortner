@@ -3,7 +3,11 @@ module UrlShortner
     before_action :set_short_url, only: [:show]
 
     def show
-      redirect_to @short_url.url, status: :moved_permanently
+      if @short_url
+        redirect_to @short_url.url, status: :moved_permanently
+      else
+        head :not_found
+      end
     end
 
     private

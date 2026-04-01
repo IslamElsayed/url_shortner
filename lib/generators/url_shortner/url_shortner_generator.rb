@@ -1,7 +1,7 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-class UrlShortnerGenerator < Rails::Generators::NamedBase
+class UrlShortnerGenerator < Rails::Generators::Base
   include Rails::Generators::Migration
   source_root File.expand_path('templates', __dir__)
 
