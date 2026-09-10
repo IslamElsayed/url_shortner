@@ -20,7 +20,10 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.required_ruby_version = ">= 3.1"
+  # 3.2 rather than 3.1: Rails 8 requires it, and so do dependencies it
+  # resolves (connection_pool 3.x), so 3.1 could not install this gem's own
+  # lockfile even though the code itself is compatible.
+  s.required_ruby_version = ">= 3.2"
 
   # 7.0 is the floor because the engine passes allow_other_host: to
   # redirect_to, which does not exist before it -- and without it the engine
