@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     url_shortner (0.1.0)
-      rails (>= 6.1)
+      rails (>= 7.0)
 
 GEM
   remote: https://rubygems.org/
