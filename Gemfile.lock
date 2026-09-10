@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     url_shortner (0.1.0)
-      rails (>= 6.1)
+      rails (>= 7.0)
 
 GEM
   remote: https://rubygems.org/
@@ -220,12 +220,14 @@ GEM
     zeitwerk (2.7.5)
 
 PLATFORMS
+  aarch64-linux
   aarch64-linux-gnu
   aarch64-linux-musl
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
   x86_64-darwin
+  x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
 

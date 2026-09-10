@@ -14,6 +14,11 @@ module Dummy
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
+    # Turned on deliberately. It is the default for any app on load_defaults
+    # 7.0 or later, and with it off the suite could not see that the engine's
+    # redirect was broken for every real host app.
+    config.action_controller.raise_on_open_redirects = true
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
